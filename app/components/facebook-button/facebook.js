@@ -53,23 +53,7 @@ function FacebookButton(props) {
   };
 
   const onPress = () => {
-    LoginManager.logInWithPermissions(['public_profile', 'email']).then(
-      function (result) {
-        console.log('in function', result);
-        if (result.isCancelled) {
-          console.log('Login cancelled');
-        } else {
-          console.log('AccessToken');
-          AccessToken.getCurrentAccessToken().then((result) => {
-            getUserProfile(result.accessToken);
-          });
-        }
-      },
-      function (error) {
-        console.log('Login fail with error: ' + error);
-        alert('Login fail with error: ' + error);
-      },
-    );
+
   };
 
   return (

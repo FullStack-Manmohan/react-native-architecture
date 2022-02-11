@@ -5,8 +5,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import { withTheme } from 'react-native-paper';
 import styles from './google.styles';
 
-// uncomment and provide webClientId
-GoogleSignin.configure({});
+/
 
 function GoogleButton(props) {
   const { colors } = props.theme;
@@ -17,37 +16,7 @@ function GoogleButton(props) {
   };
 
   const onPress = async () => {
-    try {
-      await GoogleSignin.hasPlayServices();
 
-      const userInfo = await GoogleSignin.signIn();
-      let token = await GoogleSignin.getTokens();
-      console.log('userInfo', userInfo);
-      console.log('token', token);
-      var data = {
-        user: {
-          name: userInfo.user.name,
-          type: 'google',
-          idToken: userInfo.idToken,
-          email: userInfo.user.email,
-          token: token.accessToken,
-          picture: userInfo.user.photo,
-        },
-      };
-      console.log('before dispatch', data);
-      //dispatch(googleLoginRequest(data));
-      console.log('After dispatch', data);
-    } catch (error) {
-      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-        console.log('SIGN_IN_CANCELLED', error.code);
-      } else if (error.code === statusCodes.IN_PROGRESS) {
-        console.log('IN_PROGRESS', error.code);
-      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-        console.log('PLAY_SERVICES_NOT_AVAILABLE', error.code);
-      } else {
-        console.log(error.code);
-      }
-    }
   };
 
   return (

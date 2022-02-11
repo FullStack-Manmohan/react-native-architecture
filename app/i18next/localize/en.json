@@ -24,7 +24,7 @@
   },
 
   "Component": {
-    "continueWithFacebook": "Continue With Facebook",
-    "continueWithGoogle": "Continue With Google"
+    "continueWithFacebook": "Button",
+    "continueWithGoogle": "Button"
   }
 }
