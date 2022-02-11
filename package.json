@@ -18,20 +18,11 @@
     "lint-fix": "eslint --fix .",
     "lint-check": "eslint .",
     "rename": "react-native-rename"
-    
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
     "@react-native-community/hooks": "^2.5.1",
     "@react-native-community/masked-view": "^0.1.9",
-    "@react-native-firebase/analytics": "^7.6.2",
-    "@react-native-firebase/app": "^8.4.2",
-    "@react-native-firebase/auth": "^9.2.2",
-    "@react-native-firebase/crashlytics": "^8.4.4",
-    "@react-native-firebase/database": "^7.5.6",
-    "@react-native-firebase/firestore": "^7.8.1",
-    "@react-native-firebase/messaging": "^7.8.6",
-    "@react-native-firebase/storage": "^7.4.3",
     "@react-navigation/bottom-tabs": "^5.2.7",
     "@react-navigation/drawer": "^5.5.0",
     "@react-navigation/native": "^5.1.6",
@@ -40,6 +31,7 @@
     "appcenter-analytics": "3.0.2",
     "appcenter-crashes": "3.0.2",
     "axios": "^0.19.2",
+    "glob": "^7.2.0",
     "i18next": "^19.4.3",
     "lodash": "^4.17.19",
     "moment": "^2.24.0",
